@@ -60,7 +60,7 @@ const RLE_ESCAPE_EOF: u8 = 1;
 const RLE_ESCAPE_DELTA: u8 = 2;
 
 /// The maximum width/height the decoder will process.
-const MAX_WIDTH_HEIGHT: i32 = 0xFFFF;
+const MAX_WIDTH_HEIGHT: i32 = i32::MAX;
 
 #[derive(PartialEq, Copy, Clone)]
 enum ImageType {
